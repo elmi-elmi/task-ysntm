@@ -9,7 +9,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HomeBanner",
+  name: "SectionHomeBanner",
 });
 </script>
 
@@ -24,7 +24,7 @@ export default defineComponent({
     text-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
   }
   &__pre-title {
-    @apply text-center text-[1.5rem] mb-0 font-light;
+    @apply text-center text-2xl mb-0 font-light;
   }
 }
 </style>

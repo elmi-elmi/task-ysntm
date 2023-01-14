@@ -1,16 +1,16 @@
 <script lang="ts">
-// import TheWelcome from "../components/TheWelcome.vue";
 import HomeBanner from "@/components/home/HomeBanner.vue";
+import HomeArticle from "@/components/home/home-article/HomeArticle.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HomeView",
-  components: { HomeBanner },
+  components: { HomeBanner, HomeArticle },
 });
 </script>
 
 <template>
   <section>
-    <!--    <TheWelcome />-->
     <HomeBanner />
+    <HomeArticle />
   </section>
 </template>
