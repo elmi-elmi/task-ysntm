@@ -1,8 +1,14 @@
-<script setup lang="ts">
+<script lang="ts">
 // import { RouterLink, RouterView } from "vue-router";
 // import HelloWorld from "./components/HelloWorld.vue";
 import AppHeader from "@/layouts/header/AppHeader.vue";
 import AppFooter from "@/layouts/AppFooter.vue";
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "App",
+  components: { AppFooter, AppHeader },
+});
 </script>
 
 <template>

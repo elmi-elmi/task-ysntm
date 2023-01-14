@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <ul class="flex space-x-3 text-gray-500">
+    <ul class="header-nav">
       <li
-        class="cursor-pointer hover:text-gray-800"
+        class="header-nav_li cursor-pointer"
         v-for="item in navItem"
         :key="item.name"
         :class="{ 'text-gray-900': item.name === 'home' }"
@@ -30,4 +30,11 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.header-nav {
+  @apply flex space-x-3 text-gray-400;
+  &__li {
+    @apply hover:text-gray-800 text-2xl;
+  }
+}
+</style>

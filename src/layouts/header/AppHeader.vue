@@ -1,5 +1,5 @@
 <template>
-  <header class="header container max-w-5xl mx-auto flex justify-between">
+  <header class="header">
     <AppHeaderLogo />
     <AppHeaderNav />
   </header>
@@ -17,7 +17,6 @@ export default defineComponent({
 
 <style scoped>
 .header {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  @apply container max-w-5xl mx-auto flex justify-between py-2  text-[1rem];
 }
 </style>

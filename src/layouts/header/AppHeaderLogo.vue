@@ -1,5 +1,5 @@
 <template>
-  <div class="font-bold text-conduit cursor-pointer">Conduit</div>
+  <div class="header-logo">conduit</div>
 </template>
 
 <script>
@@ -8,4 +8,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.header-logo {
+  @apply font-bold text-conduit cursor-pointer text-2xl;
+}
+</style>
