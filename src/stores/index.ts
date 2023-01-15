@@ -3,7 +3,7 @@ import actions from "@/stores/actions";
 import getters from "@/stores/getters";
 import mutations from "@/stores/mutations";
 export default createStore({
-  state: { articles: [] },
+  state: { user: null, articles: [] },
   mutations,
   actions,
   getters,

@@ -25,9 +25,7 @@ export default defineComponent({
       return this.$store.state.articles;
     },
   },
-  mounted() {
-    this.$store.dispatch("getArticles");
-  },
+
   methods: {},
 });
 </script>

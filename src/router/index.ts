@@ -23,6 +23,12 @@ const router = createRouter({
       meta: { reqAuth: false },
     },
     {
+      path: "/user",
+      name: "user",
+      component: () => import("@/views/UserView.vue"),
+      meta: { reqAuth: true },
+    },
+    {
       path: "/signup",
       name: "signup",
       component: () => import("@/views/SingupView.vue"),

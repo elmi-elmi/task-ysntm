@@ -1,5 +1,5 @@
 export default {
-  userLoggedIn(state: any) {
+  userLoggedIn(state: object) {
     return !!state.user;
   },
   getArticleWithSlug: (state: any) => (slug: string) => {

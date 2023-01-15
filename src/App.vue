@@ -6,6 +6,9 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "App",
   components: { AppFooter, AppHeader },
+  created() {
+    this.$store.dispatch("getArticles");
+  },
 });
 </script>
 
