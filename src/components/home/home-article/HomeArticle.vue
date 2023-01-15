@@ -1,7 +1,14 @@
 <template>
   <section class="articles container max-w-5xl mx-auto">
     <router-link to="/" class="articles__tab w-fit">Global Feed</router-link>
-    <HomeCard v-for="i in 5" :key="i" />
+    <HomeCard
+      v-for="(article, i) in articles"
+      :title="article.title"
+      :description="article.description"
+      :tag-list="article.tagList"
+      :author="article.author"
+      :key="i"
+    />
   </section>
 </template>
 
@@ -11,6 +18,15 @@ import HomeCard from "@/components/home/home-article/HomeCard.vue";
 export default defineComponent({
   name: "SectionHomeArticle",
   components: { HomeCard },
+
+  computed: {
+    articles() {
+      return this.$store.state.articles;
+    },
+  },
+  mounted() {
+    this.$store.dispatch("getArticles");
+  },
 });
 </script>
 
