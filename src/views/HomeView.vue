@@ -1,6 +1,6 @@
 <script lang="ts">
 import HomeBanner from "@/components/home/HomeBanner.vue";
-import HomeArticle from "@/components/home/home-article/HomeArticle.vue";
+import HomeArticle from "@/components/home/home-articles/HomeArticles.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "HomeView",

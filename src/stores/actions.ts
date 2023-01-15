@@ -3,9 +3,9 @@ import { SET_ARTICLES } from "@/stores/types";
 import articlesServices from "@/services/ArticlesServices";
 import accountServices from "@/services/AccountServices";
 export default {
-  getArticles({ commit }) {
-    articlesServices.articles().then((res) => {
-      console.log(res.data);
+  getArticles({ commit }, payload) {
+    console.log(payload);
+    articlesServices.articles(payload).then((res) => {
       commit(SET_ARTICLES, res.data.articles);
     });
   },

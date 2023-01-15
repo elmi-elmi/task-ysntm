@@ -1,18 +1,13 @@
 <template>
-  <h1>Article View {{ $route.params.slug }}</h1>
-  {{ article.body }}
+  <ArticleComponent />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import ArticleComponent from "@/components/article/ArticleComponent.vue";
 export default defineComponent({
   name: "ArticleView",
-  computed: {
-    article() {
-      return this.$store.getters.getArticleWithSlug(this.$route.params.slug);
-    },
-  },
+  components: { ArticleComponent },
 });
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <footer class="w-screen text-center mx-auto fixed bottom-0 footer">
-    <h1 class="cursor-pointer mx-auto w-fit">Fork on Github</h1>
+    <h1 class="cursor-pointer mx-auto w-fit">shahorkhelmi@gmail.com</h1>
   </footer>
 </template>
 

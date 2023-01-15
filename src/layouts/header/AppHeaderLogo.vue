@@ -1,5 +1,5 @@
 <template>
-  <div class="header-logo">conduit</div>
+  <div class="header-logo" @click="$router.push({ name: 'home' })">conduit</div>
 </template>
 
 <script>

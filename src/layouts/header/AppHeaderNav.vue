@@ -21,17 +21,6 @@ import { defineComponent } from "vue";
 import type { NavItem } from "@/types";
 
 export default defineComponent({
-  data() {
-    return {
-      navItem: [
-        { name: "home", route: "/", text: "Home", show: this.user },
-        { name: "login", route: "/login", text: "Sign in", show: true },
-        { name: "logout", route: "/", text: "Logout", show: false },
-        { name: "signup", route: "/signup", text: "Sign Up", show: true },
-      ] as NavItem[],
-      showItem: true,
-    };
-  },
   computed: {
     userLoggedIn(): NavItem[] {
       const isLogged: boolean = this.$store.getters.userLoggedIn;
