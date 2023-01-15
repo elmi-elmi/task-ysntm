@@ -1,18 +1,18 @@
 <template>
-  <LoginForm />
+  <RegisterForm />
   <div class="p-4 text-gray-500">
     <p>hint: (defined users -- https://reqres.in/api )</p>
     <p>email: eve.holt@reqres.in</p>
-    <p>password: cityslicka</p>
+    <p>password: pistol</p>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import LoginForm from "@/components/login/LoginForm.vue";
+import RegisterForm from "@/components/register/RegisterForm.vue";
 export default defineComponent({
-  name: "LoginView",
-  components: { LoginForm },
+  name: "SignupView",
+  components: { RegisterForm },
 });
 </script>
 

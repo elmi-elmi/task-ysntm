@@ -31,7 +31,7 @@ const router = createRouter({
     {
       path: "/signup",
       name: "signup",
-      component: () => import("@/views/SingupView.vue"),
+      component: () => import("@/views/SingUpView.vue"),
     },
     // {
     //   path: "/404/:resource",

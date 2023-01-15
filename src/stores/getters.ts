@@ -5,4 +5,7 @@ export default {
   getArticleWithSlug: (state: any) => (slug: string) => {
     return state.articles.find((article: object) => article.slug === slug);
   },
+  getArticles(state) {
+    return state.articles;
+  },
 };

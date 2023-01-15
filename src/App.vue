@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <main>
+  <main class="pb-24">
     <AppHeader />
     <RouterView />
     <AppFooter />

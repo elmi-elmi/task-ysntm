@@ -9,7 +9,9 @@ const apiClient = axios.create({
 });
 
 export default {
-  articles() {
-    return apiClient.get("/articles");
+  articles(query) {
+    const limit = query?.limit || 10;
+    const offset = query?.offset || 0;
+    return apiClient.get(`/articles?offset=${offset}&limit=${limit}`);
   },
 };
