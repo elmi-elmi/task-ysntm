@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="card__title">
+    <div class="card__title cursor-pointer">
       <p class="card-title__main">
         {{ title }}
       </p>
@@ -55,11 +55,11 @@ export default defineComponent({
     },
     tagList: {
       type: Array,
-      default: [],
+      default: () => [],
     },
     author: {
       type: Object,
-      default: {},
+      default: () => {},
     },
   },
 });
@@ -70,15 +70,13 @@ export default defineComponent({
   @apply rounded-full;
 }
 .card {
+  @apply py-6 px-0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.5rem 0;
 }
 
 .card-title {
   &__main {
-    font-weight: 600 !important;
-    font-size: 1.5rem !important;
-    margin-bottom: 3px;
+    @apply font-semibold text-2xl mb-1;
   }
   &__pre {
     font-weight: 300;

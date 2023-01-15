@@ -3,6 +3,7 @@
     <router-link to="/" class="articles__tab w-fit">Global Feed</router-link>
     <HomeCard
       v-for="(article, i) in articles"
+      @click="$router.push({ name: 'article', params: { slug: article.slug } })"
       :title="article.title"
       :description="article.description"
       :tag-list="article.tagList"
@@ -27,6 +28,7 @@ export default defineComponent({
   mounted() {
     this.$store.dispatch("getArticles");
   },
+  methods: {},
 });
 </script>
 
